@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 98%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgb(231, 231, 231);
+}
+nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  width: 25%;
+  max-width: 100%;
+  display: block;
+}
+nav .logo img {
+  padding-left: 50px;
+}
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+.nav-links ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 8px 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+.nav-links a:hover {
+  color: greenyellow;
+}
+nav .fa {
+  display: none;
+}
+.secciones {
+  width: 85%;
+  max-width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.seccion {
+  width: 12%;
+  height: 150px;
+  max-width: 100%;
+  background-color: rgb(248, 246, 246);
+  border: 1px solid;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+.iconos {
+  text-align: center;
+  margin: 10px;
+}
+i {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 40px;
+}
+h3 {
+  color: black;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.seccion:hover {
+  box-shadow: 2px 2px 2px 5px rgba(0, 0, 0, 0.2);
+  color: green;
+}
+.seccion:hover h3 {
+  color: green;
+}
+.contenido {
+  padding-top: 50px;
+  border: 1px dashed;
+  border-radius: 10px;
+  width: 88%;
+  margin: auto;
+  display: flex;
+}
+#contenidos {
+  margin: 30px;
+  width: 50%;
+  max-width: 100%;
+}
+#contenidos p {
+  margin-top: 20px;
+  width: 80%;
+  font-size: 20px;
+  text-align: justify;
+}
+.imagen {
+  width: 50%;
+  max-width: 100%;
+  display: flex;
+  float: right;
+  margin-left: 90px;
+}
+.imagen img {
+  max-width: 100%;
+}
+#lista {
+  margin-top: 10px;
+}
+#lista li {
+  list-style: none;
+}
+#lista i {
+  font-size: 15px;
+  color: green;
+  padding: 5px;
+}
+@media (max-width: 1280px) {
+  main {
+    width: 100%;
+    max-width: 100%;
+  }
+  .nav-links ul li {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    background-color: rgb(231, 231, 231);
+    height: 100vh;
+    width: 200px;
+    top: 0;
+    right: -200px;
+    text-align: left;
+    z-index: 2;
+    transition: 1.2s;
+  }
+  nav .fa {
+    display: block;
+    color: black;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .nav-links ul {
+    padding: 30px;
+  }
+  nav .logo img {
+    padding-left: 0px;
+  }
+
+  .secciones {
+    width: 100%;
+    max-width: 100%;
+  }
+  .seccion {
+    width: 40%;
+    margin-bottom: 30px;
+    margin: 10px auto;
+  }
+
+  .contenido {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 10px;
+    margin-top: 50px;
+    display: block;
+  }
+  #contenidos {
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+  #contenidos p {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 18px;
+    text-align: justify;
+  }
+  .imagen {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    float: none;
+    margin: 0 auto;
+  }
+}

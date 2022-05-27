@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <header class="header">
+            <nav>
+                <a href="index.html" class="logo">
+                    <img src="logo.png" alt="">
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <!-- reposnive bar open and close -->
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">TEAM</a></li>
+                        <li><a href="">PROJECTS</a></li>
+                        <li><a href="">CLIENTS</a></li>
+                        <li><a href="">PRICING</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+                <!-- reposnive bar open and close -->
+            </nav>
+        </header>
+        <section class="secciones">
+            <div class="seccion">
+                <div class="iconos">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <h3>Marketing <br>Cloud</h3>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="iconos">
+                    <i class="fa-solid fa-laptop"></i>
+                    <h3>Smartest <br>CRM</h3>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="iconos">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h3>Commerce <br>Apps</h3>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="iconos">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <h3>Business <br>Inteligence</h3>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="iconos">
+                    <i class="fa-solid fa-recycle"></i>
+                    <h3>Automation <br>Engine</h3>
+                </div>
+            </div>
+            <div class="seccion">
+                <div class="iconos">
+                    <i class="fa-solid fa-user-gear"></i>
+                    <h3>Time <br>Management</h3>
+                </div>
+            </div>
+        </section>
+        <section class="contenido">
+            <div id="contenidos">
+                <h2>Marketing Cloud</h2>
+                <p>Distincitively exploit optimal for intuitive. Quicky coordinate
+                    business applications through revolutionary catalysts for chans the Seamlessly optimal testinf
+                    process.
+                    Synergistically evolve 2.0 technologies rather than just in web & apps development
+                </p>
+                <ul id="lista">
+                    <li><i class="fa-solid fa-gear"></i>Quickly coordinate business</li>
+                    <li><i class="fa-solid fa-gear"></i>Distinctively exploit optimal alignments</li>
+                    <li><i class="fa-solid fa-gear"></i>Seamlessly optimal testing procedures</li>
+                    <li><i class="fa-solid fa-gear"></i>Applications thorugh revolutionary</li>
+                </ul>
+            </div>
+            <div class="imagen">
+                <img src="marketin.png" alt="">
+            </div>
+        </section>
+    </main>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+
+</html>
